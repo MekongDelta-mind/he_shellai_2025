@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+black = "*"
+flake8 = "*"
+isort = "*"
+mkdocs = "*"
+python-dotenv = "*"
+he-shellai = {file = ".", editable = true}
+ipykernel = "*"
+pandas = "*"
+numpy = "*"
+matplotlib = "*"
+seaborn = "*"
+scipy = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
