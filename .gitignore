@@ -1,5 +1,6 @@
 # Data
 /data/
+/models/
 
 # backup files
 .virtual_documents/
