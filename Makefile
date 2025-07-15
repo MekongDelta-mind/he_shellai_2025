@@ -16,7 +16,17 @@ PYTHON_INTERPRETER = python
 requirements:
 	$(PYTHON_INTERPRETER) -m pip install -U pip
 	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
-	
+
+## Start the Jupyter lab with the respective env
+.PHONY: env_jup
+env_jup:
+	pipenv run jupyter lab .
+
+# DOESN"T WORK
+#	pipenv shell
+#		jupyter lab .	
+#	OR
+#	pipenv shell && jupyter lab .
 
 
 
